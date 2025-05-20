@@ -56,3 +56,8 @@ India's rapid population growth in the second half of the 20th century was drive
 
 > Finished chain.
 topic='India Population' summary="India's population is expected to surpass China's by 2025, with an estimated 1.45 billion people. The country's rapid population growth is driven by improved healthcare and lower infant mortality rates." sources=['Wikipedia', 'UN data and census'] tools_used=['search']
+
+
+![image](https://github.com/user-attachments/assets/3e00b7e2-e038-43db-a6dd-ecf73723f2a2)
+
+
