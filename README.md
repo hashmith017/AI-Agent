@@ -34,8 +34,11 @@ GROQ_API_KEY=your_groq_api_key_here
 
 ## Usage
 Run the main script:       python main1.py
+
 You will be prompted:      How can I help?
+
 Type your research query, e.g.:India population
+
 The agent will fetch relevant information, process it, and print a structured research summary.
 
 ## SAMPLE OUTPUT
