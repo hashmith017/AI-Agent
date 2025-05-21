@@ -34,13 +34,9 @@ prompt = ChatPromptTemplate.from_messages(
             # system instructions on what AI should do
             "system",
             """
-            You are a research assistant that helps generate a research paper.
-            Answer the user query and use necessary tools.
-            Your response MUST be ONLY a valid JSON object matching this format exactly, with no extra text or explanation:
-
-            {format_instructions}
-
-            DO NOT include any other text outside the JSON.
+            You are a research assistant that will help generate a research paper.
+            Answer the user query and use necessary tools. 
+            Wrap the output in this format and provide no other text:\n{format_instructions}
             """,
         ),
         ("placeholder", "{chat_history}"),
@@ -63,9 +59,11 @@ agent_executor = AgentExecutor(agent=agent,tools=tools,verbose=True)
 # multiple prompt variables can be created {query}{name} but update above in the human part too
 query = input("How can i Help? ")
 raw_response = agent_executor.invoke({"query":query})
+print(raw_response)
 
 try:
     structured_response = parser.parse(raw_response["output"])
     print(structured_response)
 except Exception as e:
-    print("Error parsing response", e, "Raw Response - ", raw_response)
+    print("❌ Error parsing response:", e)
+    print("🔍 Raw Response:", raw_response)
