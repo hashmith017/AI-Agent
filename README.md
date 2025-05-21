@@ -63,5 +63,9 @@ output 1
 output 2
 ![image](https://github.com/user-attachments/assets/4448d340-d17b-4438-8add-e74249f858ec)
 
+output 3
+![image](https://github.com/user-attachments/assets/1b3b5f1f-39ef-4f15-b8af-7fc63f783f81)
+
+
 
 
